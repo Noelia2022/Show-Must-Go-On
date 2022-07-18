@@ -128,32 +128,32 @@ color: rgb(218, 183, 27);
     margin: 20px 10px 20px 10px;
 }
 .item1{
-    background-image: url(../media/galeria1.jpg);
+    background-image: url(./media/galeria1.jpg);
     background-size: cover;
     background-position: center;
 }
 .item2{
-    background-image: url(../media/galeria2.jpg);
+    background-image: url(./media/galeria2.jpg);
     background-size: cover;
     background-position: center;
 }
 .item3{
-    background-image: url(../media/galeria7.jpg);
+    background-image: url(./media/galeria7.jpg);
     background-size: cover;
     background-position: center;
 }
 .item4{
-    background-image: url(../media/galeria4.jpg);
+    background-image: url(./media/galeria4.jpg);
     background-size:cover;
     background-position: center;
 }
 .item5{
-    background-image: url(../media/galeria5.jpg);
+    background-image: url(./media/galeria5.jpg);
     background-size: cover;
     background-position: center;
 }
 .item6{
-    background-image: url(../media/galeria6.jpg);
+    background-image: url(./media/galeria6.jpg);
     background-size: cover;
     background-position: center;
 }
