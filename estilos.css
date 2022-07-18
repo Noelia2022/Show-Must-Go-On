@@ -1,0 +1,337 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Corresponden a todas las paginas */
+html{
+    height: 100%;
+}
+.grid-conteiner >*{
+    padding: 0px;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    grid-area: navbar;
+    background-color: black;
+    justify-content: flex-end;
+    /* justify-content: space-evenly; */
+}
+.navbar ul{
+    list-style: none;
+    display: none;
+    padding-top: 12px;
+}
+.menu{
+    color: rgb(158, 148, 103);
+    font-size: 30px;
+}
+.header{
+    grid-area: header;
+    background-color: black;
+}
+.logo{
+    color: rgb(218, 183, 27);
+    font-size: 30px;
+    padding: 0 30px;
+    font-family:fantasy;
+    padding-top: 20px;
+}
+/* Corresponde a la pagina de Inicio */
+.sidebar{
+    grid-area: sidebar;
+    background-color: black;
+    padding-top: 25px;
+    font-size: 25px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.encabezado{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.parrafo{
+    display: none;
+}
+.mainIndex{
+    grid-area: main;
+    background-image: url(./media/galeria3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.video{
+    color: rgb(218, 183, 27);
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+}
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: rgb(218, 183, 27);
+    font-size: 20px;
+    justify-content: center;
+}
+.grid-conteiner{
+    display: grid;
+    grid-template:
+    "header"  60px
+    "navbar"  60px
+    "sidebar" 120px
+    "main"    auto
+    "footer"  70px
+}
+body{
+    min-height: 100%;
+}
+/* Corresponde a la pagina Galeria */
+.mainGaleria{
+    width: 100%;
+    grid-area: main;
+    background-color: #999da574;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: black;
+    padding-top: 25px;
+    font-size: 25px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.sectionGaleria{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.parrafoGaleria{
+display: grid;
+font-family:'Times New Roman', Times, serif;
+text-align: center;
+font-size: 15px;
+margin: 0;
+padding: 0 3rem;
+color: rgb(218, 183, 27);
+}
+.titulosGaleria{
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+.item{
+    height: 320px;
+    width:  auto;
+    border: black solid 2px;
+    margin: 20px 10px 20px 10px;
+}
+.item1{
+    background-image: url(../media/galeria1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item2{
+    background-image: url(../media/galeria2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item3{
+    background-image: url(../media/galeria7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item4{
+    background-image: url(../media/galeria4.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.item5{
+    background-image: url(../media/galeria5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item6{
+    background-image: url(../media/galeria6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* Corresponde a la pagina Suscribite */
+.mainSuscribite{
+    grid-area: main;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-image: url(../media/galeria7.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+}
+.parrafoSuscribite{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    color: rgb(218, 183, 27);
+
+}
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.registro{
+    width: 400px;
+    background: #5b9bdb;
+    padding: 30px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    margin-right: 20px;
+    margin-top: 120px;
+}
+.newsletter{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'calibri';
+}
+.formulario{
+    color: white;
+    font-family: 'calibri';
+    font-size: 15px;
+}
+.control{
+width: 93%;
+background:  #5b9bdb;
+padding: 10px;
+border-radius: 4px;
+margin-bottom: 16px;
+border: 1px solid #1f53c5;
+font-family: 'calibri';
+font-size: 15px;
+}
+textarea{
+border: 1px solid #1f53c5;
+background-color: white;
+font-family: 'calibri';
+font-size: 15px;
+}
+.pregunta{
+    height: 40px;
+    text-align: center;
+    background-color: #5b9bdb;
+    font-family: 'calibri';
+    font-size: 20px;
+    line-height: 55px;
+}
+.pregunta :hover {
+    color: white;
+}
+.boton{
+    width: 26%;
+    background: #5e89e4;
+    padding: 10px;
+    color: white;
+}
+/* Media Queries */
+@media only screen and (min-width: 600px) {
+    .grid-conteiner {
+    grid-template:
+    "header  header"  90px
+    "navbar  navbar"  70px
+    "sidebar sidebar" auto
+    "main    main"    auto
+    "footer  footer" 90px /
+    300px    auto;
+    }
+    .navbar{
+        justify-content: space-evenly;
+    }
+    .menu{
+        display: none;
+    }
+    .navbar ul{
+        list-style: none;
+        display: flex;
+        padding-top: 12px;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-bottom: 50px;
+    }
+    .navbar ul li{
+        font-size: 30px;
+        width: max-content;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .tituloInicio{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .parrafo{
+        display: grid;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 20px;
+        margin: 0;
+        padding: 0 3rem;
+        color: rgb(218, 183, 27);
+    }
+    .parrafoSuscribite{
+        display: grid;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 30px;
+        margin: 0;
+        padding: 0 3rem;
+        color: rgb(218, 183, 27);
+
+    }
+    .encabezado{
+        display: none;
+    }
+    .item{
+        height: 680px;
+        width:  800px;
+    }
+    .parrafoGaleria{
+        font-size: 25px;
+}
+}
+@media only screen and (min-width: 900px){
+    .grid-conteiner {
+    grid-template:
+    "header  header  header"  80px
+    "navbar  navbar  navbar"  90px
+    "sidebar sidebar sidebar" auto
+    "main    main    main"    auto
+    "footer  footer footer"   70px/
+    300px    auto   auto
+    }
+    main > div {
+        width: 40%;
+    }
+    .sectionGaleria{
+        grid-template-columns: 1fr 1fr;
+    }
+    .item{
+        height: 500px;
+        width:  430px;
+    }
+    .parrafoGaleria{
+        font-size: 30px;
+}
+}
+@media only screen and (min-width: 1300px){
+    .sectionGaleria{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item{
+        height: 500px;
+        width:  420px;    
+}
+}
