@@ -3,355 +3,80 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Corresponden a todas las paginas */
-html{
-    height: 100%;
+/* corresponde a la barra de navegacion */
+.navbar{
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
 }
-.grid-conteiner >*{
-    padding: 0px;
+.navbar ul li a{
+    text-decoration: none;
+    color: white !important;
+}
+.navbar ul li a:hover{
+    color:#ff5858 !important;   
+}
+/* corresponde al footer */
+.footer{
+    background-color: black;
+    color: rgb(218, 183, 27);
+    font-size: 15px;
     text-align: center;
 }
-.navbar{
-    display: flex;
-    grid-area: navbar;
-    background-color: black;
-    justify-content: flex-end;
-    /* justify-content: space-evenly; */
-}
-.navbar ul{
-    list-style: none;
-    display: none;
-    padding-top: 12px;
-}
-.menu{
-    color: rgb(158, 148, 103);
-    font-size: 30px;
-}
-.header{
-    grid-area: header;
-    background-color: black;
-}
-.logo{
-    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
-    font-size: 30px;
-    padding: 0 30px;
-    font-family:fantasy;
-    padding-top: 20px;
-}
-/* Corresponde a la pagina de Inicio */
-.sidebar{
-    grid-area: sidebar;
-    background-color: black;
-    padding-top: 25px;
-    font-size: 25px;
-    color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-.encabezado{
-    font-size: 20px;
-    padding-top: 10px;
-}
-.parrafo{
-    display: none;
-}
-.mainIndex{
-    grid-area: main;
+/* corresponde a la pagina de inicio */
+.fondo-inicio{
     background-image: url(./media/galeria3.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .video{
     color: rgb(218, 183, 27);
     font-size: 17px;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.footer{
-    grid-area: footer;
-    background-color: black;
-    color: rgb(218, 183, 27);
-    font-size: 20px;
-    justify-content: center;
-}
-.grid-conteiner{
-    display: grid;
-    grid-template:
-    "header"  60px
-    "navbar"  60px
-    "sidebar" 120px
-    "main"    auto
-    "footer"  70px
-}
-body{
-    min-height: 100%;
-}
-/* Corresponde a la pagina Galeria */
-.mainGaleria{
+/* corresponde a la pagina de galeria */
+img{
+    padding-top: 10px;
     width: 100%;
-    grid-area: main;
-    background-color: #999da574;
-    background: linear-gradient(135deg, rgba(52, 51, 16, 0.972) 20%, rgba(230, 241, 77, 0.733) 50%, rgba(170, 170, 96, 0.662) 100%);
 }
-.sidebar{
-    grid-area: sidebar;
-    background-color: black;
-    padding-top: 25px;
-    font-size: 25px;
-    color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+/* corresponden a la pagina de suscribite */
+.formulario{
+    background-color: rgba(205, 136, 26, 0.534);
+    padding: 30px;
+    border-radius: 30px;
 }
-.sectionGaleria{
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.parrafoGaleria{
-display: grid;
-font-family:'Times New Roman', Times, serif;
-text-align: center;
-font-size: 15px;
-margin: 0;
-padding: 0 3rem;
-color: rgb(218, 183, 27);
-}
-.titulosGaleria{
-    text-align: center;
-    font-size: 35px;
-    color: black;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.form-label{
+    color: #3e0202;
     font-weight: 600;
 }
-.item{
-    height: 320px;
-    width:  auto;
-    border: black solid 2px;
-    margin: 20px 10px 20px 10px;
-}
-.item1{
-    background-image: url(./media/galeria1.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item2{
-    background-image: url(./media/galeria2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item3{
-    background-image: url(./media/galeria7.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item4{
-    background-image: url(./media/galeria4.jpg);
-    background-size:cover;
-    background-position: center;
-}
-.item5{
-    background-image: url(./media/galeria5.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item6{
-    background-image: url(./media/galeria6.jpg);
-    background-size: cover;
-    background-position: center;
-}
-/* Corresponde a la pagina Suscribite */
-.mainSuscribite{
-    grid-area: main;
-    width: 100%;
-    min-height: calc(100vh - 80px);
-    background-image: url(../media/galeria7.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    
-}
-.parrafoSuscribite{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    font-size: 20px;
-    margin: 0;
-    color: rgb(218, 183, 27);
-
-}
-.contenedor-formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.registro{
-    width: 400px;
-    background: #5b9bdb;
-    padding: 30px;
-    border-radius: 4px;
-    font-family: 'calibri';
-    margin-right: 20px;
-    margin-top: 120px;
-}
-.newsletter{
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: white;
-    font-family: 'calibri';
-}
-.formulario{
-    color: white;
-    font-family: 'calibri';
-    font-size: 15px;
-}
-.control{
-width: 93%;
-background:  #5b9bdb;
-padding: 10px;
-border-radius: 4px;
-margin-bottom: 16px;
-border: 1px solid #1f53c5;
-font-family: 'calibri';
-font-size: 15px;
-}
-textarea{
-border: 1px solid #1f53c5;
-background-color: white;
-font-family: 'calibri';
-font-size: 15px;
-}
-.pregunta{
-    height: 40px;
-    text-align: center;
-    background-color: #5b9bdb;
-    font-family: 'calibri';
-    font-size: 20px;
-    line-height: 55px;
-}
-.pregunta :hover{
-    color: white;
+h2{
+    color: #3e0202;
+    font-size: 25px !important;
 }
 .boton{
-    width: 26%;
-    background: #5e89e4;
+    /* width: 26%; */
+    background: #f09819;
     padding: 10px;
     color: white;
 }
+.fondo-suscribite{
+    background-image: url(./media/fondoqueen2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;;
+    height: 1000px;
+}
 .boton:hover{
-    color: #1f53c5;
+    color:#ff5858;
 }
-/* Media Queries */
-@media only screen and (min-width: 600px) {
-    .grid-conteiner {
-    grid-template:
-    "header  header"  90px
-    "navbar  navbar"  70px
-    "sidebar sidebar" auto
-    "main    main"    auto
-    "footer  footer" 90px /
-    300px    auto;
-    }
-    .navbar{
-        justify-content: space-evenly;
-    }
-    .menu{
-        display: none;
-    }
-    .navbar ul{
-        list-style: none;
-        display: flex;
-        padding-top: 12px;
-    }
-    .navbar ul li a{
-        text-decoration: none;
-        color: white;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        padding-bottom: 50px;
-    }
-    .navbar ul li{
-        font-size: 30px;
-        width: max-content;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    .navbar ul li a:hover{
-        background: #f09819;
-    }
-    .mainGaleria{
-        background: linear-gradient(135deg, rgba(52, 51, 16, 0.972) 20%, rgba(230, 241, 77, 0.733) 50%, rgba(170, 170, 96, 0.662) 100%), url(./media/fondoqueen.jpg) ;
-    }
-    .tituloInicio{
-        font-size: 30px;
-        padding-bottom: 10px;
-    }
-    .parrafo{
-        display: grid;
-        font-family: 'Times New Roman', Times, serif;
-        text-align: center;
-        font-size: 20px;
-        margin: 0;
-        padding: 0 3rem;
-        color: rgb(218, 183, 27);
-    }
-    .parrafoSuscribite{
-        display: grid;
-        font-family: 'Times New Roman', Times, serif;
-        text-align: center;
-        font-size: 30px;
-        margin: 0;
-        padding: 0 3rem;
-        color: rgb(218, 183, 27);
-
-    }
-    .encabezado{
-        display: none;
-    }
-    .item{
-        height: 500px;
-        width:  auto;
-        margin-left: 30px;
-        margin-right: 30px;
-        transition: 1.5s;
-    }
-    .item:hover{
-        transform: scale(1.03);
-    }
-    .parrafoGaleria{
-        font-size: 25px;
+/* corresponde a la pagina conciertos */
+.fondo-conciertos{
+    height: 1000px;
 }
-}
-@media only screen and (min-width: 900px){
-    .grid-conteiner {
-    grid-template:
-    "header  header  header"  80px
-    "navbar  navbar  navbar"  90px
-    "sidebar sidebar sidebar" auto
-    "main    main    main"    auto
-    "footer  footer footer"   70px/
-    300px    auto   auto
-    }
-    main > div {
-        width: 40%;
-    }
-    .sectionGaleria{
-        grid-template-columns: 1fr 1fr;
-    }
-    .item{
-        height: 500px;
-        width:  430px;
-        transition: 1.5s;
-    }
-    .item:hover{
-        transform: scale(1.1);
-    } 
-    .parrafoGaleria{
-        font-size: 30px;
-    }
-}
-@media only screen and (min-width: 1300px){
-    .sectionGaleria{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .item{
-        height: 500px;
-        width:  420px;    
-}
+/* corresponde a la pagina discografia */
+.fondo-discografia{
+    height: 1000px;  
 }
