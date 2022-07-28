@@ -18,8 +18,19 @@
 .footer{
     background-color: black;
     color: rgb(218, 183, 27);
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
+}
+.redes i:hover{
+    color: #d62000;
+    cursor: pointer;
+    transform: translateY(-15px);
+    transition: all 0.7s;
+}
+.redes i{
+    transition: 0.7s;
+    font-size: 30px;
+    padding: 10px;
 }
 /* corresponde a la pagina de inicio */
 .fondo-inicio{
@@ -41,6 +52,15 @@ img{
     padding-top: 10px;
     width: 100%;
 }
+.galeria{
+    background-color: #d62000b9;
+}
+.titulo-Galeria{
+    font-size: 35px !important;
+    text-align: center;
+    font-weight: 600;
+    color: aliceblue;
+}
 /* corresponden a la pagina de suscribite */
 .formulario{
     background-color: rgba(205, 136, 26, 0.534);
@@ -55,22 +75,23 @@ h2{
     color: #3e0202;
     font-size: 25px !important;
 }
-.boton{
-    /* width: 26%; */
-    background: #f09819;
-    padding: 10px;
-    color: white;
-}
 .fondo-suscribite{
     background-image: url(./media/fondoqueen2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;;
+    width: 100%;
     height: 1000px;
 }
-.boton:hover{
-    color:#ff5858;
+label{
+    padding-left: 15px !important;
+}
+.btn-primary{
+    background: #f09819 !important;
+    border-color: #ff5858 !important;
+}
+.btn:hover{
+    color:#ff5858 !important;
 }
 /* corresponde a la pagina conciertos */
 .fondo-conciertos{
@@ -79,4 +100,23 @@ h2{
 /* corresponde a la pagina discografia */
 .fondo-discografia{
     height: 1000px;  
+}
+/* corresponde a la pagina de discografia */
+.discografia{
+    width: 100%;
+    background-color: #faca86c6;
+}
+.titulo-discografia{
+    font-size: 35px !important;
+    text-align: center;
+    color: #d62000;
+    font-weight: 600;
+}
+.descripcionDeDiscos{
+    font-size: 25px !important;
+    color: #d26f04;
+}
+.textoDiscografia{
+    font-size: 15px !important;
+    font-weight: 500;
 }
