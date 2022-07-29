@@ -1,4 +1,9 @@
-* {
+$color1: #ff5858;
+$color2: #d62000;
+$color3: rgb(218, 183, 27);
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,37 +11,33 @@
 
 /* corresponde a la barra de navegacion */
 .navbar {
-    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    background-image: linear-gradient(-60deg, $color1 0%, #f09819 100%);
+    a{
+        text-decoration: none;
+        color: white !important;
+        &:hover{
+            color: $color1 !important;
+        }
+    }
 }
-
-.navbar a {
-    text-decoration: none;
-    color: white !important;
-}
-
-.navbar a:hover {
-    color: #ff5858 !important;
-}
-
 /* corresponde al footer */
 .footer {
     background-color: black;
-    color: rgb(218, 183, 27);
+    color: $color3;
     font-size: 20px;
     text-align: center;
 }
-
 .redes i {
     transition: 0.7s;
     font-size: 30px;
     padding: 10px;
-}
 
-.redes i:hover {
-    color: #d62000;
-    cursor: pointer;
-    transform: translateY(-15px);
-    transition: all 0.7s;
+    &:hover {
+        color: $color2;
+        cursor: pointer;
+        transform: translateY(-15px);
+        transition: all 0.7s;
+    }
 }
 
 /* corresponde a la pagina de inicio */
@@ -48,7 +49,7 @@
 }
 
 .video {
-    color: rgb(218, 183, 27);
+    color: $color3;
     font-size: 17px;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -63,7 +64,7 @@ img {
 }
 
 .galeria {
-    background-color: #d62000;
+    background-color: $color2;
 }
 
 .titulo-Galeria {
@@ -78,19 +79,16 @@ img {
     background-color: rgba(205, 136, 26, 0.534);
     padding: 30px;
     border-radius: 30px;
+    label{
+        color: #3e0202;
+        font-weight: 600;
+        padding-left: 15px !important;
+    }
 }
-
-.formulario label {
-    color: #3e0202;
-    font-weight: 600;
-    padding-left: 15px !important;
-}
-
 h2 {
     color: #3e0202;
     font-size: 25px !important;
 }
-
 .fondo-suscribite {
     background-image: url(./media/fondoqueen2.jpg);
     background-position: center;
@@ -99,16 +97,13 @@ h2 {
     width: 100%;
     height: 1000px;
 }
-
 .btn-primary {
     background: #f09819 !important;
-    border-color: #ff5858 !important;
+    border-color: $color1 !important;
+    &:hover{
+        color: $color1 !important;
+    }
 }
-
-.btn-primary:hover {
-    color: #ff5858 !important;
-}
-
 /* corresponde a la pagina conciertos */
 .fondo-conciertos {
     height: 1000px;
@@ -122,13 +117,13 @@ h2 {
 /* corresponde a la pagina de discografia */
 .discografia {
     width: 100%;
-    background-color: rgba(250, 202, 134, 0.7764705882);
+    background-color: #faca86c6;
 }
 
 .titulo-discografia {
     font-size: 35px !important;
     text-align: center;
-    color: #d62000;
+    color: $color2;
     font-weight: 600;
 }
 
@@ -141,5 +136,3 @@ h2 {
     font-size: 15px !important;
     font-weight: 500;
 }
-
-/*# sourceMappingURL=estilos.css.map */
