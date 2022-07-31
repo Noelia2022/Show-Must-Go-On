@@ -57,20 +57,20 @@
 }
 
 /* corresponde a la pagina de galeria */
-img {
-    padding-top: 10px;
-    width: 100%;
-}
-
 .galeria {
     background-color: #d62000;
 }
 
-.titulo-Galeria {
+.galeria h2 {
     font-size: 35px !important;
     text-align: center;
     font-weight: 600;
     color: aliceblue;
+}
+
+.galeria img {
+    padding-top: 10px;
+    width: 100%;
 }
 
 /* corresponden a la pagina de suscribite */
@@ -86,7 +86,7 @@ img {
     padding-left: 15px !important;
 }
 
-h2 {
+.formulario h2 {
     color: #3e0202;
     font-size: 25px !important;
 }
@@ -114,15 +114,16 @@ h2 {
     height: 1000px;
 }
 
-/* corresponde a la pagina discografia */
-.fondo-discografia {
-    height: 1000px;
-}
-
 /* corresponde a la pagina de discografia */
+/* corresponde a la pagina discografia */
 .discografia {
     width: 100%;
     background-color: rgba(250, 202, 134, 0.7764705882);
+}
+
+.discografia img {
+    padding-top: 10px;
+    width: 100%;
 }
 
 .titulo-discografia {
@@ -142,4 +143,18 @@ h2 {
     font-weight: 500;
 }
 
+@media only screen and (min-width: 900px) {
+    .formulario {
+        height: 600px !important;
+        width: 700px !important;
+    }
+
+    .inframe {
+        width: 600px;
+        height: 450px;
+    }
+}
+
+/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.css.map */
 /*# sourceMappingURL=estilos.css.map */
