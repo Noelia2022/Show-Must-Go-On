@@ -2,6 +2,20 @@ $coral: #ff5858;
 $rojo: #d62000;
 $amarillo: rgb(218, 183, 27);
 
+$paletaDeColores: (
+    color1: #ff5858,
+    color2: #d62000,
+    color3: rgb(218, 183, 27),
+    color4: #c95b12
+);
+
+@mixin fondo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +31,7 @@ $amarillo: rgb(218, 183, 27);
         color: white !important;
 
         &:hover {
-            color: $coral !important;
+            color: $amarillo !important;
         }
     }
 }
@@ -44,11 +58,15 @@ $amarillo: rgb(218, 183, 27);
 }
 
 /* corresponde a la pagina de inicio */
+.tituloInicio {
+    text-align: center;
+    color: map-get($paletaDeColores , color1 );
+    font-size: 25px;
+}
+
 .fondo-inicio {
     background-image: url(./media/galeria3.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include fondo();
 }
 
 .video {
@@ -63,20 +81,20 @@ $amarillo: rgb(218, 183, 27);
 /* corresponde a la pagina de galeria */
 
 .galeria {
-    background-color: $rojo;
+    @extend .discografia;
+}
 
-    h2 {
-        font-size: 35px !important;
+    .tituloGaleria {
+        font-size: 25px;
         text-align: center;
         font-weight: 600;
-        color: aliceblue;
+        color: map-get($paletaDeColores ,color4 );
     }
 
     img {
         padding-top: 10px;
         width: 100%;
     }
-}
 
 /* corresponden a la pagina de suscribite */
 .formulario {
@@ -98,9 +116,7 @@ $amarillo: rgb(218, 183, 27);
 
 .fondo-suscribite {
     background-image: url(./media/fondoqueen2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include fondo();
     width: 100%;
     height: 1000px;
 }
@@ -117,7 +133,18 @@ $amarillo: rgb(218, 183, 27);
 /* corresponde a la pagina conciertos */
 .fondo-conciertos {
     height: 1000px;
+    background-image:url(./media/fondo1.jpg);
+    @include fondo();
 }
+
+.tituloConciertos {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    color: map-get($paletaDeColores , color3 );
+}
+
+
 
 /* corresponde a la pagina de discografia */
 /* corresponde a la pagina discografia */
@@ -132,15 +159,15 @@ $amarillo: rgb(218, 183, 27);
     }
 }
 
-.titulo-discografia {
-    font-size: 35px !important;
+.tituloDiscografia {
+    font-size: 25px;
     text-align: center;
-    color: $rojo;
+    color: map-get($paletaDeColores , color2 );
     font-weight: 600;
 }
 
 .descripcionDeDiscos {
-    font-size: 25px !important;
+    font-size: 20px !important;
     color: #d26f04;
 }
 

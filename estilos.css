@@ -1,160 +1,163 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* corresponde a la barra de navegacion */
 .navbar {
-    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
 }
-
 .navbar a {
-    text-decoration: none;
-    color: white !important;
+  text-decoration: none;
+  color: white !important;
 }
-
 .navbar a:hover {
-    color: #ff5858 !important;
+  color: rgb(218, 183, 27) !important;
 }
 
 /* corresponde al footer */
 .footer {
-    background-color: black;
-    color: rgb(218, 183, 27);
-    font-size: 20px;
-    text-align: center;
+  background-color: black;
+  color: rgb(218, 183, 27);
+  font-size: 20px;
+  text-align: center;
 }
 
 .redes i {
-    transition: 0.7s;
-    font-size: 30px;
-    padding: 10px;
+  transition: 0.7s;
+  font-size: 30px;
+  padding: 10px;
 }
-
 .redes i:hover {
-    color: #d62000;
-    cursor: pointer;
-    transform: translateY(-15px);
-    transition: all 0.7s;
+  color: #d62000;
+  cursor: pointer;
+  transform: translateY(-15px);
+  transition: all 0.7s;
 }
 
 /* corresponde a la pagina de inicio */
+.tituloInicio {
+  text-align: center;
+  color: #ff5858;
+  font-size: 25px;
+}
+
 .fondo-inicio {
-    background-image: url(./media/galeria3.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(./media/galeria3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .video {
-    color: rgb(218, 183, 27);
-    font-size: 17px;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 10px;
-    margin-right: 10px;
+  color: rgb(218, 183, 27);
+  font-size: 17px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* corresponde a la pagina de galeria */
-.galeria {
-    background-color: #d62000;
+.tituloGaleria {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  color: #c95b12;
 }
 
-.galeria h2 {
-    font-size: 35px !important;
-    text-align: center;
-    font-weight: 600;
-    color: aliceblue;
-}
-
-.galeria img {
-    padding-top: 10px;
-    width: 100%;
+img {
+  padding-top: 10px;
+  width: 100%;
 }
 
 /* corresponden a la pagina de suscribite */
 .formulario {
-    background-color: rgba(205, 136, 26, 0.534);
-    padding: 30px;
-    border-radius: 30px;
+  background-color: rgba(205, 136, 26, 0.534);
+  padding: 30px;
+  border-radius: 30px;
 }
-
 .formulario label {
-    color: #3e0202;
-    font-weight: 600;
-    padding-left: 15px !important;
+  color: #3e0202;
+  font-weight: 600;
+  padding-left: 15px !important;
 }
-
 .formulario h2 {
-    color: #3e0202;
-    font-size: 25px !important;
+  color: #3e0202;
+  font-size: 25px !important;
 }
 
 .fondo-suscribite {
-    background-image: url(./media/fondoqueen2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 1000px;
+  background-image: url(./media/fondoqueen2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
 }
 
 .btn-primary {
-    background: #f09819 !important;
-    border-color: #ff5858 !important;
+  background: #f09819 !important;
+  border-color: #ff5858 !important;
 }
-
 .btn-primary:hover {
-    color: #ff5858 !important;
+  color: #ff5858 !important;
 }
 
 /* corresponde a la pagina conciertos */
 .fondo-conciertos {
-    height: 1000px;
+  height: 1000px;
+  background-image: url(./media/fondo1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tituloConciertos {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(218, 183, 27);
 }
 
 /* corresponde a la pagina de discografia */
 /* corresponde a la pagina discografia */
-.discografia {
-    width: 100%;
-    background-color: rgba(250, 202, 134, 0.7764705882);
+.discografia, .galeria {
+  width: 100%;
+  background-color: rgba(250, 202, 134, 0.7764705882);
+}
+.discografia img, .galeria img {
+  padding-top: 10px;
+  width: 100%;
 }
 
-.discografia img {
-    padding-top: 10px;
-    width: 100%;
-}
-
-.titulo-discografia {
-    font-size: 35px !important;
-    text-align: center;
-    color: #d62000;
-    font-weight: 600;
+.tituloDiscografia {
+  font-size: 25px;
+  text-align: center;
+  color: #d62000;
+  font-weight: 600;
 }
 
 .descripcionDeDiscos {
-    font-size: 25px !important;
-    color: #d26f04;
+  font-size: 20px !important;
+  color: #d26f04;
 }
 
 .textoDiscografia {
-    font-size: 15px !important;
-    font-weight: 500;
+  font-size: 15px !important;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 900px) {
-    .formulario {
-        height: 600px !important;
-        width: 700px !important;
-    }
-
-    .inframe {
-        width: 600px;
-        height: 450px;
-    }
+  .formulario {
+    height: 600px !important;
+    width: 700px !important;
+  }
+  .inframe {
+    width: 600px;
+    height: 450px;
+  }
 }
-
 /*# sourceMappingURL=estilos.css.map */
-/*# sourceMappingURL=estilos.css.map */
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.css.map *//*# sourceMappingURL=estilos.css.map */
