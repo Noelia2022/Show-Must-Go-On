@@ -1,172 +1,216 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* corresponde a la barra de navegacion */
 .navbar {
-    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
 }
 
 .navbar a {
-    text-decoration: none;
-    color: white !important;
+  text-decoration: none;
+  color: white !important;
 }
 
 .navbar a:hover {
-    color: rgb(218, 183, 27) !important;
+  color: rgb(218, 183, 27) !important;
 }
 
 /* corresponde al footer */
 .footer {
-    background-color: black;
-    color: rgb(218, 183, 27);
-    font-size: 20px;
-    text-align: center;
+  background-color: black;
+  color: rgb(218, 183, 27);
+  font-size: 20px;
+  text-align: center;
+  font-family: "Caveat", cursive;
 }
 
 .redes i {
-    transition: 0.7s;
-    font-size: 30px;
-    padding: 10px;
+  transition: 0.7s;
+  font-size: 30px;
+  padding: 10px;
 }
 
 .redes i:hover {
-    color: #d62000;
-    cursor: pointer;
-    transform: translateY(-15px);
-    transition: all 0.7s;
+  color: #d62000;
+  cursor: pointer;
+  transform: translateY(-15px);
+  transition: all 0.7s;
 }
 
 /* corresponde a la pagina de inicio */
-.tituloInicio {
-    text-align: center;
-    color: #ff5858;
-    font-size: 25px;
+.tituloInicio,
+.tituloConciertos {
+  text-align: center;
+  color: #d62000;
+  font-size: 28px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.tituloInicio:hover,
+.tituloConciertos:hover {
+  color: rgb(218, 183, 27);
+  cursor: pointer;
+  transition: all 0.7s;
 }
 
 .fondo-inicio {
-    background-image: url(./media/galeria3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(./media/galeria3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .video {
-    color: rgb(218, 183, 27);
-    font-size: 17px;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 10px;
-    margin-right: 10px;
+  color: rgb(218, 183, 27);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Source Code Pro", monospace;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* corresponde a la pagina de galeria */
 .tituloGaleria {
-    font-size: 25px;
-    text-align: center;
-    font-weight: 600;
-    color: #c95b12;
+  font-size: 28px;
+  text-align: center;
+  font-family: "Rubik Dirt", cursive;
+  color: rgb(255, 77, 0);
+}
+
+.tituloGaleria:hover {
+  color: rgb(218, 183, 27);
+  cursor: pointer;
+  transition: all 0.7s;
 }
 
 img {
-    padding-top: 10px;
-    width: 100%;
+  padding-top: 10px;
+  width: 100%;
 }
 
 /* corresponden a la pagina de suscribite */
 .formulario {
-    background-color: rgba(205, 136, 26, 0.534);
-    padding: 30px;
-    border-radius: 30px;
+  background-color: rgba(205, 136, 26, 0.534);
+  padding: 30px;
+  border-radius: 30px;
 }
 
 .formulario label {
-    color: #3e0202;
-    font-weight: 600;
-    padding-left: 15px !important;
+  color: #3e0202;
+  font-weight: 600;
+  padding-left: 15px !important;
+  font-family: "Caveat", cursive;
 }
 
 .formulario h2 {
-    color: #3e0202;
-    font-size: 25px !important;
+  color: #3e0202;
+  font-size: 28px !important;
+  font-family: "Caveat", cursive;
+}
+
+.formulario h2:hover {
+  color: rgb(218, 183, 27);
+  cursor: pointer;
+  transition: all 0.7s;
 }
 
 .fondo-suscribite {
-    background-image: url(./media/fondoqueen2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 1000px;
+  background-image: url(./media/fondoqueen2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
 }
 
 .btn-primary {
-    background: #f09819 !important;
-    border-color: #ff5858 !important;
+  background: #f09819 !important;
+  border-color: #ff5858 !important;
+  font-family: "Caveat", cursive;
 }
 
 .btn-primary:hover {
-    color: #ff5858 !important;
+  color: #ff5858 !important;
 }
 
 /* corresponde a la pagina conciertos */
 .fondo-conciertos {
-    height: 1000px;
-    background-image: url(./media/fondo1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: auto;
+  background-image: url(./media/fondoconciertos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.tituloConciertos {
-    font-size: 25px;
-    text-align: center;
-    font-weight: 600;
-    color: rgb(218, 183, 27);
+.tituloConciertos:hover {
+  color: rgb(218, 183, 27);
+  cursor: pointer;
+  transition: all 0.7s;
 }
 
-/* corresponde a la pagina de discografia */
+.video-conciertos {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  color: #d62000;
+}
+
+.textoConciertos {
+  color: rgb(218, 183, 27);
+  font-size: 20px;
+  font-family: "Uchen", serif;
+}
+
+/* corresponde a la pagina discografia */
 .discografia,
 .galeria {
-    width: 100%;
-    background-color: rgba(250, 202, 134, 0.7764705882);
+  width: 100%;
+  background-color: rgba(250, 202, 134, 0.7764705882);
 }
 
 .discografia img,
 .galeria img {
-    padding-top: 10px;
-    width: 100%;
+  padding-top: 10px;
+  width: 100%;
 }
 
 .tituloDiscografia {
-    font-size: 25px;
-    text-align: center;
-    color: #d62000;
-    font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  color: #d62000;
+  font-family: "Source Code Pro", monospace !important;
+}
+
+.tituloDiscografia:hover {
+  color: rgb(218, 183, 27);
+  cursor: pointer;
+  transition: all 0.7s;
 }
 
 .descripcionDeDiscos {
-    font-size: 20px !important;
-    color: #d26f04;
+  font-size: 22px !important;
+  color: #d26f04;
+  font-family: "Source Code Pro", monospace !important;
 }
 
 .textoDiscografia {
-    font-size: 15px !important;
-    font-weight: 500;
+  font-size: 18px !important;
+  font-family: "Source Code Pro", monospace;
 }
 
 @media only screen and (min-width: 900px) {
-    .formulario {
-        height: 600px !important;
-        width: 700px !important;
-    }
+  .formulario {
+    height: 600px !important;
+    width: 700px !important;
+  }
 
-    .inframe {
-        width: 600px;
-        height: 450px;
-    }
+  .inframe {
+    width: 600px;
+    height: 450px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

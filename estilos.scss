@@ -2,18 +2,23 @@ $coral: #ff5858;
 $rojo: #d62000;
 $amarillo: rgb(218, 183, 27);
 
-$paletaDeColores: (
-    color1: #ff5858,
+$paletaDeColores: (color1: #ff5858,
     color2: #d62000,
     color3: rgb(218, 183, 27),
-    color4: #c95b12
-);
+    color4: rgb(255, 77, 0));
 
 @mixin fondo {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+}
+
+@mixin hover {
+    &:hover {
+        color: $amarillo;
+        cursor: pointer;
+        transition: all 0.7s;
+    }
 }
 
 * {
@@ -42,6 +47,7 @@ $paletaDeColores: (
     color: $amarillo;
     font-size: 20px;
     text-align: center;
+    font-family: 'Caveat', cursive;
 }
 
 .redes i {
@@ -60,8 +66,10 @@ $paletaDeColores: (
 /* corresponde a la pagina de inicio */
 .tituloInicio {
     text-align: center;
-    color: map-get($paletaDeColores , color1 );
-    font-size: 25px;
+    color: map-get($paletaDeColores, color2);
+    font-size: 28px;
+    font-family: 'Source Code Pro', monospace;
+    @include hover();
 }
 
 .fondo-inicio {
@@ -71,9 +79,9 @@ $paletaDeColores: (
 
 .video {
     color: $amarillo;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Source Code Pro', monospace;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -84,17 +92,18 @@ $paletaDeColores: (
     @extend .discografia;
 }
 
-    .tituloGaleria {
-        font-size: 25px;
-        text-align: center;
-        font-weight: 600;
-        color: map-get($paletaDeColores ,color4 );
-    }
+.tituloGaleria {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Rubik Dirt', cursive;
+    color: map-get($paletaDeColores, color4);
+    @include hover();
+}
 
-    img {
-        padding-top: 10px;
-        width: 100%;
-    }
+img {
+    padding-top: 10px;
+    width: 100%;
+}
 
 /* corresponden a la pagina de suscribite */
 .formulario {
@@ -106,11 +115,14 @@ $paletaDeColores: (
         color: #3e0202;
         font-weight: 600;
         padding-left: 15px !important;
+        font-family: 'Caveat', cursive;
     }
 
     h2 {
         color: #3e0202;
-        font-size: 25px !important;
+        font-size: 28px !important;
+        font-family: 'Caveat', cursive;
+        @include hover();
     }
 }
 
@@ -124,6 +136,7 @@ $paletaDeColores: (
 .btn-primary {
     background: #f09819 !important;
     border-color: $coral !important;
+    font-family: 'Caveat', cursive;
 
     &:hover {
         color: $coral !important;
@@ -132,21 +145,28 @@ $paletaDeColores: (
 
 /* corresponde a la pagina conciertos */
 .fondo-conciertos {
-    height: 1000px;
-    background-image:url(./media/fondo1.jpg);
+    height: auto;
+    background-image: url(./media/fondoconciertos.jpg);
     @include fondo();
 }
 
 .tituloConciertos {
+    @extend .tituloInicio;
+    @include hover();
+}
+
+.video-conciertos {
     font-size: 25px;
     text-align: center;
     font-weight: 600;
-    color: map-get($paletaDeColores , color3 );
+    color: map-get($paletaDeColores, color2);
 }
 
-
-
-/* corresponde a la pagina de discografia */
+.textoConciertos {
+    color: map-get($paletaDeColores, color3);
+    font-size: 20px;
+    font-family: 'Uchen', serif;
+}
 /* corresponde a la pagina discografia */
 
 .discografia {
@@ -160,20 +180,22 @@ $paletaDeColores: (
 }
 
 .tituloDiscografia {
-    font-size: 25px;
+    font-size: 28px;
     text-align: center;
-    color: map-get($paletaDeColores , color2 );
-    font-weight: 600;
+    color: map-get($paletaDeColores, color2);
+    font-family: 'Source Code Pro', monospace !important;
+    @include hover();
 }
 
 .descripcionDeDiscos {
-    font-size: 20px !important;
+    font-size: 22px !important;
     color: #d26f04;
+    font-family: 'Source Code Pro', monospace !important;
 }
 
 .textoDiscografia {
-    font-size: 15px !important;
-    font-weight: 500;
+    font-size: 18px !important;
+    font-family: 'Source Code Pro', monospace;
 }
 
 @media only screen and (min-width: 900px) {
