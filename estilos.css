@@ -8,12 +8,10 @@
 .navbar {
   background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
 }
-
 .navbar a {
   text-decoration: none;
   color: white !important;
 }
-
 .navbar a:hover {
   color: rgb(218, 183, 27) !important;
 }
@@ -32,7 +30,6 @@
   font-size: 30px;
   padding: 10px;
 }
-
 .redes i:hover {
   color: #d62000;
   cursor: pointer;
@@ -41,16 +38,13 @@
 }
 
 /* corresponde a la pagina de inicio */
-.tituloInicio,
-.tituloConciertos {
+.tituloInicio, .tituloConciertos {
   text-align: center;
   color: #d62000;
   font-size: 28px;
   font-family: "Source Code Pro", monospace;
 }
-
-.tituloInicio:hover,
-.tituloConciertos:hover {
+.tituloInicio:hover, .tituloConciertos:hover {
   color: rgb(218, 183, 27);
   cursor: pointer;
   transition: all 0.7s;
@@ -79,7 +73,6 @@
   font-family: "Rubik Dirt", cursive;
   color: rgb(255, 77, 0);
 }
-
 .tituloGaleria:hover {
   color: rgb(218, 183, 27);
   cursor: pointer;
@@ -92,38 +85,62 @@ img {
 }
 
 /* corresponden a la pagina de suscribite */
+.hero {
+  min-height: 100vh;
+  position: relative;
+}
+
+.video-formulario {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -999;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3e0202;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  z-index: -2;
+}
+
+.formulario-contenedor {
+  padding-top: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .formulario {
   background-color: rgba(205, 136, 26, 0.534);
   padding: 30px;
   border-radius: 30px;
+  z-index: 100;
 }
-
 .formulario label {
   color: #3e0202;
   font-weight: 600;
   padding-left: 15px !important;
   font-family: "Caveat", cursive;
 }
-
 .formulario h2 {
   color: #3e0202;
   font-size: 28px !important;
   font-family: "Caveat", cursive;
+  z-index: 100;
 }
-
 .formulario h2:hover {
   color: rgb(218, 183, 27);
   cursor: pointer;
   transition: all 0.7s;
-}
-
-.fondo-suscribite {
-  background-image: url(./media/fondoqueen2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 1000px;
 }
 
 .btn-primary {
@@ -131,7 +148,6 @@ img {
   border-color: #ff5858 !important;
   font-family: "Caveat", cursive;
 }
-
 .btn-primary:hover {
   color: #ff5858 !important;
 }
@@ -165,14 +181,11 @@ img {
 }
 
 /* corresponde a la pagina discografia */
-.discografia,
-.galeria {
+.discografia, .galeria {
   width: 100%;
   background-color: rgba(250, 202, 134, 0.7764705882);
 }
-
-.discografia img,
-.galeria img {
+.discografia img, .galeria img {
   padding-top: 10px;
   width: 100%;
 }
@@ -183,7 +196,6 @@ img {
   color: #d62000;
   font-family: "Source Code Pro", monospace !important;
 }
-
 .tituloDiscografia:hover {
   color: rgb(218, 183, 27);
   cursor: pointer;
@@ -206,13 +218,10 @@ img {
     height: 600px !important;
     width: 700px !important;
   }
-
   .inframe {
     width: 600px;
     height: 450px;
   }
 }
-
 /*# sourceMappingURL=estilos.css.map */
-/*# sourceMappingURL=estilos.css.map */
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.css.map *//*# sourceMappingURL=estilos.css.map */

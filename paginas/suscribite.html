@@ -41,42 +41,47 @@
       </div>
     </nav>
     <!-- termina la barra de navegacion -->
-    <div class="fondo-suscribite w-100 d-flex justify-content-center align-items-center">
-      <div class="content text-center">
-        <form class="formulario">
-          <div class="mb-3 col-auto">
-            <h2>Formulario de Suscripción</h2>
-            <label for="exampleInputEmail1" class="form-label">Nombre <span></span>
-            </label>
-            <input type="text" class="form-control" id="formGroupExampleInput" required>
-          </div>
-          <div class="mb-3 col-auto">
-            <label for="exampleInputPassword1" class="form-label">Apellido <span></span>
-            </label>
-            <input type="text" class="form-control" id="formGroupExampleInput" required>
-          </div>
-          <div class="mb-3 col-auto row-auto">
-            <label for="exampleInputPassword1" class="form-label">Email <span></span>
-            </label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-          </div>
-          <label for="">Miembro favorito</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Seleccionar</option>
-            <option value="1">Freddie Mercury</option>
-            <option value="2">Brian May</option>
-            <option value="3">John Deacon</option>
-            <option value="4">Roger Tylor</option>
-          </select>
-          <div class="mb-3 col-auto">
-            <label for="exampleFormControlTextarea1" class="form-label">Comentarios <span></span>
-            </label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar formulario</button>
-        </form>
-      </div>
-    </div>
+    <main class="hero">
+      <div class="w-100 d-flex justify-content-center align-items-center">
+        <div class="content text-center formulario-contenedor">
+          <form class="formulario">
+            <div class="mb-3 col-auto">
+              <h2>Formulario de Suscripción</h2>
+              <label for="exampleInputEmail1" class="form-label">Nombre <span></span>
+              </label>
+              <input type="text" class="form-control" id="formGroupExampleInput" required>
+            </div>
+            <div class="mb-3 col-auto">
+              <label for="exampleInputPassword1" class="form-label">Apellido <span></span>
+              </label>
+              <input type="text" class="form-control" id="formGroupExampleInput" required>
+            </div>
+            <div class="mb-3 col-auto row-auto">
+              <label for="exampleInputPassword1" class="form-label">Email <span></span>
+              </label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            </div>
+            <label for="">Miembro favorito</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Seleccionar</option>
+              <option value="1">Freddie Mercury</option>
+              <option value="2">Brian May</option>
+              <option value="3">John Deacon</option>
+              <option value="4">Roger Tylor</option>
+            </select>
+            <div class="mb-3 col-auto">
+              <label for="exampleFormControlTextarea1" class="form-label">Comentarios <span></span>
+              </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar formulario</button>
+          </form>
+        </div>
+        <video class="video-formulario" onloadedmetadata="this.muted=true" autoplay loop>
+          <source src="../media/video-formulario.mp4" type="video/mp4">
+        </video>
+        <div class="capa"></div>
+    </main>
     <!-- termina el formulario de suscripcion -->
     <!-- comienza el footer -->
     <footer class="footer">

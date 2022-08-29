@@ -106,10 +106,40 @@ img {
 }
 
 /* corresponden a la pagina de suscribite */
+.hero{
+    min-height: 100vh;
+    position: relative;
+}
+.video-formulario{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -999;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3e0202;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    z-index: -2;
+}
+.formulario-contenedor{
+    padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .formulario {
     background-color: rgba(205, 136, 26, 0.534);
     padding: 30px;
     border-radius: 30px;
+    z-index: 100;
 
     label {
         color: #3e0202;
@@ -123,14 +153,8 @@ img {
         font-size: 28px !important;
         font-family: 'Caveat', cursive;
         @include hover();
+        z-index: 100;
     }
-}
-
-.fondo-suscribite {
-    background-image: url(./media/fondoqueen2.jpg);
-    @include fondo();
-    width: 100%;
-    height: 1000px;
 }
 
 .btn-primary {
