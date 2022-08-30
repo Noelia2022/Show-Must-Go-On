@@ -22,7 +22,7 @@
   color: rgb(218, 183, 27);
   font-size: 20px;
   text-align: center;
-  font-family: "Caveat", cursive;
+  font-family: "Source Code Pro", monospace;
 }
 
 .redes i {
@@ -70,7 +70,7 @@
 .tituloGaleria {
   font-size: 28px;
   text-align: center;
-  font-family: "Rubik Dirt", cursive;
+  font-family: "Source Code Pro", monospace;
   color: rgb(255, 77, 0);
 }
 .tituloGaleria:hover {
@@ -85,7 +85,7 @@ img {
 }
 
 /* corresponden a la pagina de suscribite */
-.hero {
+.formulario-main {
   min-height: 100vh;
   position: relative;
 }
@@ -107,7 +107,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #3e0202;
+  background: #c86c04;
   opacity: 0.5;
   mix-blend-mode: overlay;
   z-index: -2;
@@ -213,14 +213,20 @@ img {
   font-family: "Source Code Pro", monospace;
 }
 
+@media only screen and (min-width: 620px) {
+  .inframe {
+    width: 600px;
+    height: 450px;
+  }
+}
 @media only screen and (min-width: 900px) {
   .formulario {
     height: 600px !important;
     width: 700px !important;
   }
   .inframe {
-    width: 600px;
-    height: 450px;
+    width: 700px;
+    height: 550px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

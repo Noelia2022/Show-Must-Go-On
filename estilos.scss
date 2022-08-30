@@ -7,6 +7,9 @@ $paletaDeColores: (color1: #ff5858,
     color3: rgb(218, 183, 27),
     color4: rgb(255, 77, 0));
 
+$fuente: 'Source Code Pro',
+monospace;
+
 @mixin fondo {
     background-position: center;
     background-repeat: no-repeat;
@@ -47,7 +50,7 @@ $paletaDeColores: (color1: #ff5858,
     color: $amarillo;
     font-size: 20px;
     text-align: center;
-    font-family: 'Caveat', cursive;
+    font-family: $fuente;
 }
 
 .redes i {
@@ -68,7 +71,7 @@ $paletaDeColores: (color1: #ff5858,
     text-align: center;
     color: map-get($paletaDeColores, color2);
     font-size: 28px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: $fuente;
     @include hover();
 }
 
@@ -81,7 +84,7 @@ $paletaDeColores: (color1: #ff5858,
     color: $amarillo;
     font-size: 18px;
     font-weight: 600;
-    font-family: 'Source Code Pro', monospace;
+    font-family: $fuente;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -95,7 +98,7 @@ $paletaDeColores: (color1: #ff5858,
 .tituloGaleria {
     font-size: 28px;
     text-align: center;
-    font-family: 'Rubik Dirt', cursive;
+    font-family: $fuente;
     color: map-get($paletaDeColores, color4);
     @include hover();
 }
@@ -106,11 +109,12 @@ img {
 }
 
 /* corresponden a la pagina de suscribite */
-.hero{
+.formulario-main {
     min-height: 100vh;
     position: relative;
 }
-.video-formulario{
+
+.video-formulario {
     position: absolute;
     top: 0;
     left: 0;
@@ -119,22 +123,25 @@ img {
     object-fit: cover;
     z-index: -999;
 }
-.capa{
+
+.capa {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #3e0202;
+    background: #c86c04;
     opacity: 0.5;
     mix-blend-mode: overlay;
     z-index: -2;
 }
-.formulario-contenedor{
+
+.formulario-contenedor {
     padding-top: 150px;
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .formulario {
     background-color: rgba(205, 136, 26, 0.534);
     padding: 30px;
@@ -191,6 +198,7 @@ img {
     font-size: 20px;
     font-family: 'Uchen', serif;
 }
+
 /* corresponde a la pagina discografia */
 
 .discografia {
@@ -207,19 +215,26 @@ img {
     font-size: 28px;
     text-align: center;
     color: map-get($paletaDeColores, color2);
-    font-family: 'Source Code Pro', monospace !important;
+    font-family: $fuente !important;
     @include hover();
 }
 
 .descripcionDeDiscos {
     font-size: 22px !important;
     color: #d26f04;
-    font-family: 'Source Code Pro', monospace !important;
+    font-family: $fuente !important;
 }
 
 .textoDiscografia {
     font-size: 18px !important;
-    font-family: 'Source Code Pro', monospace;
+    font-family: $fuente;
+}
+
+@media only screen and (min-width: 620px) {
+    .inframe {
+        width: 600px;
+        height: 450px;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -229,8 +244,8 @@ img {
     }
 
     .inframe {
-        width: 600px;
-        height: 450px;
+        width: 700px;
+        height: 550px;
     }
 }
 
